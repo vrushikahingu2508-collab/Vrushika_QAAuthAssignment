@@ -1,0 +1,24 @@
+TestCaseType,Name,Email,Password,ConfirmPassword,ExpectedResult
+Valid User,Juli Sharma,juli.sharma@gmail.com,Juli@12345678,Test@12345678,Success
+Valid User,Anita Verma,anita.verma@gmail.com,Anita12345,Anita12345,Success
+Valid User,Rahul Mehta,rahul.mehta@gmail.com,SRahul123,SRahul123,Success
+Valid User,Neha Patel,neha.patel@gmail.com,Neha@12345678,Neha@12345678,Success
+
+Duplicate Email,Juli,juli.sharma@gmail.com,Juli@12345678,Juli@12345678,409 Conflict
+Duplicate Email,Anita User,anita.verma@gmail.com,Anita12345,Anita12345,409 Conflict
+
+Invalid Email,Juli,juliemail.com,Juli@12345678,Juli@12345678,Validation Error
+Invalid Email,Anita ,anita@.com,anita@12345678,anita@12345678,Validation Error
+Invalid Email,siya,siya@gmail,siya@12345678,siya@12345678,Validation Error
+Invalid Email,riya,riyagmail.com,riya@12345678,riya@12345678,Validation Error
+
+Weak Password,Juli,juli@gmail.com,juli123,juli123,Validation Error
+Weak Password,siya,siya@gmail.com,passwordonly,passwordonly,Validation Error
+Weak Password,rita,rita@gmail.com,12345678901,12345678901,Validation Error
+
+Special Characters in Name,Vr@sh!ka,vrushika@gmail.com,Test@12345678,Test@12345678,Validation Based
+Special Characters in Name,John#Doe,john@gmail.com,Test@12345678,Test@12345678,Validation Based
+
+Leading/Trailing Spaces,juli," juli.sharma@gmail.com ",Test@12345678,Test@12345678,Trimmed or Error
+Leading/Trailing Spaces,Space anita," anita.verma@gmail.com",Test@12345678,Test@12345678,Trimmed or Error
+Leading/Trailing Spaces,Space siya,"siya22@gmail.com ",Test@12345678,Test@12345678,Trimmed or Error
