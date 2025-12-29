@@ -1,11 +1,11 @@
 TestCaseType,Name,Email,Password,ConfirmPassword,ExpectedResult
-Valid User,Juli Sharma,juli.sharma@gmail.com,Juli@12345678,Test@12345678,Success
-Valid User,Anita Verma,anita.verma@gmail.com,Anita12345,Anita12345,Success
+Valid User,Juli Sharma,juli.sharma@gmail.com,Juli@12345678,Juli@12345678,Success
+Valid User,Anita Verma,anita.verma@gmail.com,Anita1234514,Anita1234514,Success
 Valid User,Rahul Mehta,rahul.mehta@gmail.com,SRahul123,SRahul123,Success
 Valid User,Neha Patel,neha.patel@gmail.com,Neha@12345678,Neha@12345678,Success
 
 Duplicate Email,Juli,juli.sharma@gmail.com,Juli@12345678,Juli@12345678,409 Conflict
-Duplicate Email,Anita User,anita.verma@gmail.com,Anita12345,Anita12345,409 Conflict
+Duplicate Email,Anita User,anita.verma@gmail.com,Anita1234514,Anita1234514,409 Conflict
 
 Invalid Email,Juli,juliemail.com,Juli@12345678,Juli@12345678,Validation Error
 Invalid Email,Anita ,anita@.com,anita@12345678,anita@12345678,Validation Error
